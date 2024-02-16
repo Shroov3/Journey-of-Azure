@@ -1,7 +1,7 @@
 
 FW should have a dedicated subnet so that it can have a VMSS in backend subscription
 
-![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/e61a580e-018f-4e0d-93a8-44e4e12df3d2)
+![1](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/e61a580e-018f-4e0d-93a8-44e4e12df3d2)
 
 **Creating AzureFirewallSubnet**
 
