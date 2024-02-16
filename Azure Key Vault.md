@@ -2,7 +2,7 @@ Azure Key Vault is a cloud service for securely storing and accessing
 secrets. A secret is anything that you want to tightly control access
 to, such as API keys, passwords, certificates, or cryptographic keys.
 
-Encryption: Azure Key Vault uses AES 256-bit encryption to protect your
+##Encryption##: Azure Key Vault uses AES 256-bit encryption to protect your
 secrets and keys, ensuring they remain private and safe.
 
 ![1](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/74c62119-2ea4-4562-ad20-72a725f0cbaa)
