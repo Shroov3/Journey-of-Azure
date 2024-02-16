@@ -1,0 +1,47 @@
+
+FW should have a dedicated subnet so that it can have a VMSS in backend subscription
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/e61a580e-018f-4e0d-93a8-44e4e12df3d2)
+
+**Creating AzureFirewallSubnet**
+
+ ![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/b2ed5e1c-a933-4f7d-bf05-e2c1e96b5fad)
+
+After creating a Subnet the error highlight gone and we can deploy FW
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/135fe3e6-4fc0-4930-82b5-1c5cf9faf80e)
+
+Make note of private and public ip address of Firewall
+Public ip address - 
+Private ip address –
+ 
+ ![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/30268ea6-28a0-40e0-8659-d0dfb838b2d6)
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/22b41bb2-e1d7-47dd-af0b-9650e56dabcc)
+
+Create a route table and attached it to subnet of which needed to be protected
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/c84d7a2c-f1da-4603-8ede-b549139d992a)
+
+So we cannot associate route table to the AzureFirewallSubnet
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/3c7934ea-cfa7-4b04-a81b-1eb0d573f16a)
+
+Create route to Firewall private ip 
+  
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/d255322d-f78f-42cc-8a2b-da9790a454f4)
+
+Now go to Azure firewall policy and configure Application rules and network rules and dnat 
+Application rule to allow http and https 
+Network rule to allow DNS (53) or you can also point to custom dns server
+DNAT rules for RDP rule (Point the destination translation type to VM private ip)
+
+ ![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/67643577-e366-42b0-92e1-715cb23b7007)
+
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/228e8663-144c-4281-9f69-5bfa89c37c16)
+ 
+Lets test the computer behind the firewall with RDP     
+ 
+![image](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/ae8fd542-062d-4542-b676-bb3616716e08)
+
+**END!**
