@@ -5,7 +5,7 @@ to, such as API keys, passwords, certificates, or cryptographic keys.
 Encryption: Azure Key Vault uses AES 256-bit encryption to protect your
 secrets and keys, ensuring they remain private and safe.
 
-<img src="media/image1.png" style="width:4.85813in;height:2.25233in" />
+![1](https://github.com/Shroov3/Journey-of-Azure/assets/113405359/74c62119-2ea4-4562-ad20-72a725f0cbaa)
 
 Concept:
 
